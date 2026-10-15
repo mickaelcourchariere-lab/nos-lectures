@@ -1,0 +1,482 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nos lectures</title>
+<meta name="description" content="Des livres choisis pour accompagner bébé : un thème, cinq livres.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#f7f3ed" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#1b1815" media="(prefers-color-scheme: dark)">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icone-192.png" type="image/png">
+<link rel="apple-touch-icon" href="icone-180.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Lectures">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+<!--
+  Recueil de lectures pour le futur bébé : un thème, un top 5.
+  Cette page est publiée sur internet (GitHub Pages) : rien de personnel ici
+  (pas de prénoms, pas de date de naissance prévue, pas d'avis signé).
+  Toutes les données sont dans le bloc JSON « donnees » ci-dessous : pour ajouter un thème,
+  un livre ou changer un statut, on ne modifie que ce bloc. La page se construit toute seule.
+  Champs d'un livre : titre, auteurs, annee, enBref (une phrase courte), pourQui, pourquoi,
+  niveau (« accessible », « approfondi »), fiabilite (« solide », « nuancer », « discute »),
+  fiabiliteNote, statut (« à découvrir », « à acheter ou emprunter », « en cours », « lu »),
+  avis, format, editeur, editionAnnee, prix, isbn, disponibilite.
+  Champ facultatif d'un thème : aSavoir (un encadré court sous le top 5).
+-->
+<script type="application/json" id="donnees">
+{
+  "miseAJour": "2026-10-15",
+  "themes": [
+    {
+      "id": "lecture",
+      "titre": "La lecture",
+      "intro": "Lire avec bébé dès les premiers mois, lui donner le goût des livres, et comprendre comment il apprendra à lire.",
+      "livres": [
+        {
+          "titre": "Les livres, c'est bon pour les bébés",
+          "auteurs": "Marie Bonnafé",
+          "annee": "1994",
+          "enBref": "Pourquoi et comment lire des albums aux bébés dès les premiers mois, juste pour le plaisir.",
+          "pourQui": "Les parents, dès la grossesse et pour les 0 à 3 ans.",
+          "pourquoi": "Le livre fondateur de la lecture aux tout-petits en France : les bébés aiment écouter et feuilleter des albums bien avant de parler.",
+          "niveau": "accessible",
+          "fiabilite": "nuancer",
+          "fiabiliteNote": "Une référence, écrite par une psychiatre qui a cofondé l'association ACCES (livres et bébés). Elle s'appuie sur des années de terrain plus que sur des études chiffrées.",
+          "statut": "à découvrir",
+          "format": "Poche",
+          "editeur": "Pluriel",
+          "editionAnnee": "2011",
+          "prix": "8,00",
+          "isbn": "9782818501962",
+          "disponibilite": "Facile à trouver."
+        },
+        {
+          "titre": "Lire des livres à des bébés",
+          "auteurs": "Dominique Rateau",
+          "annee": "1998",
+          "enBref": "Le guide pratique : quels livres choisir, quand et comment les lire à un tout-petit.",
+          "pourQui": "Les parents, pour les 0 à 3 ans.",
+          "pourquoi": "Petit livre très concret : choisir les livres, qui lit, quand, comment, et comment s'appuyer sur la crèche et la bibliothèque.",
+          "niveau": "accessible",
+          "fiabilite": "nuancer",
+          "fiabiliteNote": "Écrit par une orthophoniste qui a animé près de quinze ans un programme « livres et petite enfance » : un savoir de terrain, pas un ouvrage de recherche. Un peu ancien.",
+          "statut": "à découvrir",
+          "format": "Petit format",
+          "editeur": "Érès",
+          "editionAnnee": "1998",
+          "prix": "9,50",
+          "isbn": "9782865866441",
+          "disponibilite": "Rarement en rayon : à commander en librairie."
+        },
+        {
+          "titre": "Faites-les lire !",
+          "auteurs": "Michel Desmurget",
+          "annee": "2023",
+          "enBref": "Ce que la lecture apporte à l'enfant, et pourquoi la famille compte tant face aux écrans.",
+          "pourQui": "Les parents, de la naissance à l'adolescence.",
+          "pourquoi": "Langage, attention, empathie, réussite scolaire : ce que la lecture pour le plaisir apporte, et pourquoi continuer à lire à voix haute même quand l'enfant sait lire.",
+          "niveau": "accessible",
+          "fiabilite": "nuancer",
+          "fiabiliteNote": "Chercheur à l'Inserm, il s'appuie sur des centaines d'études. Mais le ton est alarmiste, et son discours sur les écrans est jugé trop tranché par certains chercheurs.",
+          "statut": "à découvrir",
+          "format": "Poche",
+          "editeur": "Points",
+          "editionAnnee": "2024",
+          "prix": "10,80",
+          "isbn": "9791041414970",
+          "disponibilite": "Très facile à trouver."
+        },
+        {
+          "titre": "Lecteur, reste avec nous !",
+          "auteurs": "Maryanne Wolf",
+          "annee": "2023",
+          "enBref": "Comment la lecture façonne le cerveau de l'enfant, en neuf lettres faciles à lire.",
+          "pourQui": "Les parents, pour toute l'enfance.",
+          "pourquoi": "Une grande chercheuse de la lecture explique ce que lire construit dans le cerveau dès le plus jeune âge, ce que les écrans risquent de faire perdre, et donne des conseils pour les tout-petits.",
+          "niveau": "accessible",
+          "fiabilite": "solide",
+          "fiabiliteNote": "Solide sur le cerveau qui lit, qu'elle étudie depuis des décennies. Les passages sur le numérique sont plus un plaidoyer qu'une démonstration.",
+          "statut": "à découvrir",
+          "format": "Grand format",
+          "editeur": "Rosie & Wolfe",
+          "editionAnnee": "2023",
+          "prix": "23,00",
+          "isbn": "9782889730414",
+          "disponibilite": "À commander en librairie."
+        },
+        {
+          "titre": "Les neurones de la lecture",
+          "auteurs": "Stanislas Dehaene",
+          "annee": "2007",
+          "enBref": "Comment le cerveau apprend à lire, et quelle méthode marche le mieux au CP.",
+          "pourQui": "Les parents curieux, surtout vers 4 à 7 ans, à l'approche du CP.",
+          "pourquoi": "Le cerveau apprend à lire en recyclant des circuits faits pour reconnaître les objets ; enseigner le lien entre lettres et sons est ce qui marche le mieux ; et ce qu'est la dyslexie.",
+          "niveau": "approfondi",
+          "fiabilite": "solide",
+          "fiabiliteNote": "La référence des neurosciences de la lecture, par le chercheur qui a présidé le conseil scientifique de l'Éducation nationale.",
+          "statut": "à découvrir",
+          "format": "Grand format",
+          "editeur": "Odile Jacob",
+          "editionAnnee": "2007",
+          "prix": "29,90",
+          "isbn": "9782738119742",
+          "disponibilite": "Plus court et moins cher, du même auteur : « Apprendre à lire » (Odile Jacob, 2011, 14,90 €)."
+        }
+      ],
+      "aSavoir": "Et Céline Alvarez ? Son livre « Pourquoi il faut apprendre à lire en maternelle » (Les Arènes, 2026, 20 €) n'est pas dans ce top 5 : sa méthode n'a jamais été évaluée de façon indépendante. Préparer la lecture en maternelle (sons et lettres) est validé par la recherche ; faire lire couramment tous les enfants si tôt ne l'est pas."
+    },
+    {
+      "id": "developpement",
+      "titre": "Le développement du bébé",
+      "intro": "Ce que le bébé perçoit, comprend et apprend dès les premiers mois, et comment l'accompagner.",
+      "livres": [
+        {
+          "titre": "Apprendre !",
+          "auteurs": "Stanislas Dehaene",
+          "annee": "2018",
+          "enBref": "Comment le cerveau apprend : attention, curiosité, droit à l'erreur, sommeil.",
+          "pourQui": "Les parents, dès la grossesse ; utile pour toute l'enfance.",
+          "pourquoi": "Une synthèse claire de la recherche sur l'apprentissage par l'un des meilleurs spécialistes mondiaux, avec des idées simples à appliquer au quotidien.",
+          "niveau": "approfondi",
+          "fiabilite": "solide",
+          "fiabiliteNote": "Professeur au Collège de France, il résume des recherches publiées. Le livre parle de l'apprentissage en général : le bébé n'en occupe qu'une partie.",
+          "statut": "à découvrir",
+          "format": "Grand format",
+          "editeur": "Odile Jacob",
+          "editionAnnee": "2018",
+          "prix": "24,90",
+          "isbn": "9782738145420",
+          "disponibilite": "Pas de poche. Facile à trouver."
+        },
+        {
+          "titre": "Comment pensent les bébés ?",
+          "auteurs": "Alison Gopnik, Andrew Meltzoff, Patricia Kuhl",
+          "annee": "1999",
+          "enBref": "Le bébé, petit scientifique : tout ce qu'il comprend bien plus tôt qu'on ne le croit.",
+          "pourQui": "Les parents, pour les 0 à 3 ans.",
+          "pourquoi": "Trois chercheurs racontent leurs expériences : le bébé observe, teste et comprend le monde, les autres et le langage dès les premiers mois.",
+          "niveau": "accessible",
+          "fiabilite": "solide",
+          "fiabiliteNote": "Des chercheurs de premier plan. Le livre date de 1999 : quelques résultats sont discutés depuis, mais l'essentiel tient toujours.",
+          "statut": "à découvrir",
+          "format": "Grand format",
+          "editeur": "Le Pommier",
+          "editionAnnee": "2005",
+          "prix": "23,90",
+          "isbn": "9782746502123",
+          "disponibilite": "Le poche (9,90 €) est épuisé : à chercher d'occasion ou en médiathèque."
+        },
+        {
+          "titre": "Journal d'un bébé",
+          "auteurs": "Daniel Stern",
+          "annee": "1990",
+          "enBref": "Le monde raconté par un bébé, de 6 semaines à 4 ans. Court et touchant.",
+          "pourQui": "Les parents, pour les 0 à 4 ans.",
+          "pourquoi": "Un regard, une faim, un jeu, une séparation vus par Joey, un bébé : le livre aide à se mettre à la place de son enfant.",
+          "niveau": "accessible",
+          "fiabilite": "nuancer",
+          "fiabiliteNote": "Stern était un chercheur du nourrisson reconnu, mais les pensées du bébé sont imaginées à partir des recherches des années 1980.",
+          "statut": "à découvrir",
+          "format": "Poche",
+          "editeur": "Odile Jacob",
+          "editionAnnee": "2012",
+          "prix": "8,50",
+          "isbn": "9782738122674",
+          "disponibilite": "Facile à trouver."
+        },
+        {
+          "titre": "Grandir autonome",
+          "auteurs": "Emmi Pikler",
+          "annee": "2017",
+          "enBref": "La motricité libre : laisser bébé découvrir seul comment bouger, à son rythme.",
+          "pourQui": "Les parents, pour les 0 à 2 ans.",
+          "pourquoi": "Le bébé apprend à se retourner, s'asseoir et marcher par lui-même, sans qu'on le mette dans des positions qu'il ne sait pas encore prendre. Avec photos et dessins.",
+          "niveau": "approfondi",
+          "fiabilite": "nuancer",
+          "fiabiliteNote": "Fondé sur des observations très détaillées de centaines d'enfants à Budapest, sans étude comparative. La motricité libre est aujourd'hui largement adoptée par les professionnels de la petite enfance.",
+          "statut": "à découvrir",
+          "format": "Grand format",
+          "editeur": "Érès",
+          "editionAnnee": "2017",
+          "prix": "23,00",
+          "isbn": "9782749256658",
+          "disponibilite": "Plutôt lu par les professionnels : à commander en librairie."
+        },
+        {
+          "titre": "Le cerveau de votre enfant",
+          "auteurs": "Daniel J. Siegel, Tina Payne Bryson",
+          "annee": "2011",
+          "enBref": "Douze conseils illustrés pour traverser les crises et les grosses émotions.",
+          "pourQui": "Les parents, surtout à partir de 2 ans.",
+          "pourquoi": "Comprendre ce qui se passe chez l'enfant pendant une crise et l'aider à se calmer. Le plus pratique de la liste.",
+          "niveau": "accessible",
+          "fiabilite": "nuancer",
+          "fiabiliteNote": "Utile en pratique, mais ses images du cerveau (« cerveau du haut et du bas ») sont des métaphores très simplifiées.",
+          "statut": "à découvrir",
+          "format": "Grand format",
+          "editeur": "Les Arènes",
+          "editionAnnee": "2015",
+          "prix": "19,90",
+          "isbn": "9782352044116",
+          "disponibilite": "Le poche (6,90 €) est épuisé : à chercher d'occasion ou en médiathèque."
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+<style>
+  :root {
+    --fond: #f7f3ed;
+    --surface: #fffdf9;
+    --texte: #29231f;
+    --doux: #6f645b;
+    --trait: #e7ded3;
+    --accent: #a4502e;
+    --solide: #2f7552;
+    --nuancer: #b07a10;
+    --discute: #b0442c;
+    --encadre: #f1e9df;
+    color-scheme: light;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --fond: #1b1815;
+      --surface: #24201c;
+      --texte: #efe7dd;
+      --doux: #b2a597;
+      --trait: #39322b;
+      --accent: #e2906a;
+      --solide: #7fcba3;
+      --nuancer: #e6bd5c;
+      --discute: #f0907a;
+      --encadre: #2c2621;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --fond: #1b1815;
+    --surface: #24201c;
+    --texte: #efe7dd;
+    --doux: #b2a597;
+    --trait: #39322b;
+    --accent: #e2906a;
+    --solide: #7fcba3;
+    --nuancer: #e6bd5c;
+    --discute: #f0907a;
+    --encadre: #2c2621;
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--fond);
+    color: var(--texte);
+    font: 17px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  .page { max-width: 760px; margin: 0 auto; padding: 56px 16px 80px; }
+  h1, h2, h3, .rang { font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif; }
+
+  /* En-tête */
+  .surtitre { text-transform: uppercase; letter-spacing: .14em; font-size: 12.5px; font-weight: 600; color: var(--accent); margin: 0 0 10px; }
+  h1 { font-size: clamp(36px, 8vw, 54px); line-height: 1.05; font-weight: 600; margin: 0 0 14px; }
+  .chapeau { color: var(--doux); margin: 0 0 28px; max-width: 52ch; }
+  .legende { font-size: 14px; color: var(--doux); margin: 0 0 40px; }
+  .legende b { font-weight: 600; }
+
+  /* Fiabilité : un point de couleur et un mot */
+  .fiab { display: inline-flex; align-items: center; gap: 6px; font-size: 13.5px; font-weight: 600; white-space: nowrap; }
+  .fiab::before { content: ""; width: 9px; height: 9px; border-radius: 50%; background: currentColor; }
+  .fiab.solide { color: var(--solide); }
+  .fiab.nuancer { color: var(--nuancer); }
+  .fiab.discute { color: var(--discute); }
+
+  /* Les thèmes : des volets, un seul ouvert à la fois */
+  .themes { display: grid; gap: 14px; }
+  details.theme {
+    background: var(--surface); border: 1px solid var(--trait); border-radius: 18px;
+    scroll-margin-top: 16px; transition: border-color .15s;
+  }
+  details.theme[open] { border-color: var(--accent); }
+  details.theme > summary {
+    list-style: none; cursor: pointer; display: grid; grid-template-columns: 44px 1fr 28px;
+    align-items: center; gap: 0 14px; padding: 20px 20px 20px 16px; border-radius: 18px;
+  }
+  details.theme > summary::-webkit-details-marker { display: none; }
+  details.theme > summary:hover h2 { color: var(--accent); }
+  .pastille-num {
+    display: grid; place-items: center; width: 44px; height: 44px; border-radius: 50%;
+    background: var(--encadre); color: var(--accent); font-weight: 600; font-size: 18px;
+  }
+  details.theme[open] .pastille-num { background: var(--accent); color: var(--surface); }
+  h2 { font-size: clamp(22px, 4.5vw, 27px); line-height: 1.2; font-weight: 600; margin: 0; transition: color .15s; }
+  .theme-intro { color: var(--doux); margin: 3px 0 0; font-size: 15.5px; }
+  .chevron { width: 28px; height: 28px; color: var(--doux); transition: transform .2s; }
+  details.theme[open] .chevron { transform: rotate(180deg); color: var(--accent); }
+  .contenu { border-top: 1px solid var(--trait); padding: 0 0 6px; }
+
+  /* Les cinq livres d'un thème */
+  ol.top { list-style: none; margin: 0; padding: 0; }
+  ol.top > li { display: grid; grid-template-columns: 52px 1fr; gap: 0 14px; padding: 22px 22px 20px 14px; }
+  ol.top > li + li { border-top: 1px solid var(--trait); }
+  .rang { font-size: 40px; line-height: 1; color: var(--accent); text-align: center; font-weight: 600; padding-top: 2px; }
+  .ligne1 { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+  h3 { font-size: 21px; line-height: 1.25; font-weight: 600; margin: 0; }
+  .prix { font-weight: 600; white-space: nowrap; font-size: 15.5px; }
+  .auteur { color: var(--doux); font-size: 15px; margin: 2px 0 8px; }
+  .en-bref { margin: 0 0 12px; }
+  .actions { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 16px; font-size: 14.5px; }
+  .actions .ou { color: var(--doux); }
+  .actions a { color: var(--texte); font-weight: 600; text-decoration: underline; text-decoration-color: var(--trait); text-underline-offset: 3px; text-decoration-thickness: 2px; }
+  .actions a:hover { color: var(--accent); text-decoration-color: var(--accent); }
+  .statut { font-size: 13px; font-weight: 600; color: var(--accent); background: var(--encadre); border-radius: 999px; padding: 1px 9px; }
+
+  details.plus { margin-top: 12px; }
+  details.plus summary { cursor: pointer; font-size: 14.5px; color: var(--doux); list-style: none; display: inline-flex; align-items: center; gap: 6px; }
+  details.plus summary::-webkit-details-marker { display: none; }
+  details.plus summary::before { content: "+"; display: inline-grid; place-items: center; width: 18px; height: 18px; border: 1px solid var(--trait); border-radius: 50%; font-size: 13px; line-height: 1; }
+  details.plus[open] summary::before { content: "−"; }
+  details.plus summary:hover { color: var(--texte); }
+  .fiche { margin: 12px 0 0; padding: 14px 16px; background: var(--encadre); border-radius: 12px; font-size: 15px; display: grid; gap: 8px; }
+  .fiche p { margin: 0; }
+  .fiche b { font-weight: 600; }
+  .fiche .ref { color: var(--doux); font-size: 14px; }
+
+  .a-savoir { margin: 4px 20px 18px; padding: 14px 16px; border-left: 3px solid var(--accent); background: var(--encadre); border-radius: 0 12px 12px 0; font-size: 15px; }
+  .a-savoir b { font-weight: 600; }
+
+  footer { color: var(--doux); font-size: 14px; border-top: 1px solid var(--trait); padding-top: 16px; margin-top: 48px; }
+
+  @media (max-width: 560px) {
+    body { font-size: 16px; }
+    .page { padding-top: 36px; }
+    details.theme > summary { grid-template-columns: 36px 1fr 24px; gap: 0 12px; padding: 16px 14px 16px 12px; }
+    .pastille-num { width: 36px; height: 36px; font-size: 16px; }
+    .chevron { width: 24px; height: 24px; }
+    .a-savoir { margin: 4px 14px 16px; }
+    ol.top > li { grid-template-columns: 34px 1fr; gap: 0 10px; padding: 18px 16px 16px 10px; }
+    .rang { font-size: 30px; }
+    .ligne1 { flex-direction: column; gap: 2px; }
+    h3 { font-size: 19px; }
+  }
+  @media print {
+    body { background: #fff; font-size: 11pt; }
+    .actions a, .actions .ou, .chevron { display: none; }
+    ol.top > li { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<main class="page">
+  <header>
+    <p class="surtitre">Pour bien accueillir bébé</p>
+    <h1>Nos lectures</h1>
+    <p class="chapeau">Choisissez un thème pour voir ses cinq meilleurs livres : ce que chacun apporte, s'il est fiable et où l'acheter.</p>
+    <p class="legende">
+      <span class="fiab solide">Solide</span> fondé sur la recherche ·
+      <span class="fiab nuancer">À nuancer</span> utile, mais simplifié ou fondé sur l'expérience.
+      Le prix d'un livre neuf est le même partout en France.
+    </p>
+  </header>
+
+  <div class="themes" id="themes"></div>
+
+  <footer>
+    <p>Mis à jour le <span id="maj"></span>. Prix et disponibilités relevés à cette date. En magasin : sur Fnac ou Cultura, choisissez votre magasin pour voir si le livre est en rayon ; « Librairie » montre les librairies indépendantes proches qui l'ont en stock.</p>
+  </footer>
+</main>
+
+<script>
+(function () {
+  var d = JSON.parse(document.getElementById('donnees').textContent);
+
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+    });
+  }
+  var FIAB = { solide: 'Solide', nuancer: 'À nuancer', discute: 'Discuté' };
+  var NIV = { accessible: 'facile à lire', approfondi: 'plus approfondi' };
+
+  function lien(nom, url) {
+    return '<a href="' + esc(url) + '" target="_blank" rel="noopener">' + nom + '</a>';
+  }
+
+  function ligne(l, i) {
+    var q = encodeURIComponent(l.isbn || (l.titre + ' ' + l.auteurs));
+    var ref = [l.format, l.editeur, l.editionAnnee, l.isbn ? 'ISBN ' + l.isbn : ''].filter(Boolean).map(esc).join(' · ');
+    var statut = l.statut && l.statut !== 'à découvrir' ? '<span class="statut">' + esc(l.statut) + '</span>' : '';
+    return '<li>' +
+      '<div class="rang">' + (i + 1) + '</div>' +
+      '<div>' +
+        '<div class="ligne1"><h3>' + esc(l.titre) + '</h3>' + (l.prix ? '<span class="prix">' + esc(l.prix) + ' €</span>' : '') + '</div>' +
+        '<p class="auteur">' + esc(l.auteurs) + ', ' + esc(l.annee) + '</p>' +
+        '<p class="en-bref">' + esc(l.enBref) + '</p>' +
+        '<div class="actions">' +
+          '<span class="fiab ' + esc(l.fiabilite) + '">' + esc(FIAB[l.fiabilite] || l.fiabilite) + '</span>' + statut +
+          '<span class="ou">Acheter :</span>' +
+          lien('Fnac', 'https://www.fnac.com/SearchResult/ResultList.aspx?Search=' + q) +
+          lien('Cultura', 'https://www.cultura.com/search/results?search_query=' + q) +
+          lien('Librairie', 'https://www.placedeslibraires.fr/listeliv.php?base=allbooks&mots_recherche=' + q) +
+        '</div>' +
+        '<details class="plus"><summary>En savoir plus</summary><div class="fiche">' +
+          (l.pourQui ? '<p><b>Pour qui :</b> ' + esc(l.pourQui) + (l.niveau ? ' Livre ' + esc(NIV[l.niveau] || l.niveau) + '.' : '') + '</p>' : '') +
+          (l.pourquoi ? '<p><b>Ce qu\'il apporte :</b> ' + esc(l.pourquoi) + '</p>' : '') +
+          (l.fiabiliteNote ? '<p><b>Fiabilité :</b> ' + esc(l.fiabiliteNote) + '</p>' : '') +
+          (l.avis ? '<p><b>Notre avis :</b> ' + esc(l.avis) + '</p>' : '') +
+          '<p class="ref">' + ref + (l.disponibilite ? '. ' + esc(l.disponibilite) : '') + '</p>' +
+        '</div></details>' +
+      '</div></li>';
+  }
+
+  var CHEVRON = '<svg class="chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>';
+
+  var html = '';
+  d.themes.forEach(function (t, i) {
+    html += '<details class="theme" id="' + esc(t.id) + '">' +
+      '<summary>' +
+        '<span class="pastille-num">' + (i + 1) + '</span>' +
+        '<div><h2>' + esc(t.titre) + '</h2><p class="theme-intro">' + esc(t.intro) + '</p></div>' +
+        CHEVRON +
+      '</summary>' +
+      '<div class="contenu">' +
+        '<ol class="top">' + t.livres.map(ligne).join('') + '</ol>' +
+        (t.aSavoir ? '<p class="a-savoir"><b>À savoir.</b> ' + esc(t.aSavoir) + '</p>' : '') +
+      '</div></details>';
+  });
+  var conteneur = document.getElementById('themes');
+  conteneur.innerHTML = html;
+
+  // Un seul thème ouvert à la fois : ouvrir un thème referme les autres.
+  var volets = conteneur.querySelectorAll('details.theme');
+  volets.forEach(function (v) {
+    v.addEventListener('toggle', function () {
+      if (!v.open) return;
+      volets.forEach(function (autre) { if (autre !== v) autre.open = false; });
+      try { history.replaceState(null, '', '#' + v.id); } catch (e) {}
+      var haut = v.getBoundingClientRect().top;
+      if (haut < 0 || haut > window.innerHeight * 0.4) v.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+  // Un lien vers « …html#lecture » ouvre directement ce thème.
+  var cible = location.hash && document.getElementById(decodeURIComponent(location.hash.slice(1)));
+  if (cible && cible.matches('details.theme')) cible.open = true;
+  var m = d.miseAJour.split('-');
+  document.getElementById('maj').textContent = m[2] + '/' + m[1] + '/' + m[0];
+})();
+
+// Appli installable : garde la page en mémoire pour l'ouvrir même sans internet.
+if ('serviceWorker' in navigator && location.protocol === 'https:') {
+  navigator.serviceWorker.register('sw.js').catch(function () {});
+}
+</script>
+</body>
+</html>
