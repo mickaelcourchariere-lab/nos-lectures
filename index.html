@@ -25,7 +25,9 @@
   Champs d'un livre : titre, auteurs, annee, enBref (une phrase courte), pourQui, pourquoi,
   niveau (« accessible », « approfondi »), fiabilite (« solide », « nuancer », « discute »),
   fiabiliteNote, statut (« à découvrir », « à acheter ou emprunter », « en cours », « lu »),
-  avis, format, editeur, editionAnnee, prix, isbn, disponibilite.
+  avis, format, editeur, editionAnnee, prix, isbn, disponibilite,
+  numerique ({ isbn, prix, kobo } si une version ePub existe ; null s'il n'y en a pas ;
+  absent si on ne sait pas). Le lien Kobo n'apparaît que si numerique est rempli.
   Champ facultatif d'un thème : aSavoir (un encadré court sous le top 5).
 -->
 <script type="application/json" id="donnees">
@@ -53,7 +55,13 @@
           "editionAnnee": "2025",
           "prix": "18,00",
           "isbn": "9782749284200",
-          "disponibilite": "Facile à trouver."
+          "disponibilite": "Facile à trouver.",
+          "numerique": {
+            "isbn": "9782749284217",
+            "prix": "12,99",
+            "format": "ePub",
+            "kobo": "https://www.kobo.com/fr/fr/search?query=9782749284217"
+          }
         },
         {
           "titre": "Comprendre son bébé : le langage secret des pleurs",
@@ -71,7 +79,13 @@
           "editionAnnee": "2025",
           "prix": "18,90",
           "isbn": "9791030106121",
-          "disponibilite": "Facile à trouver."
+          "disponibilite": "Facile à trouver.",
+          "numerique": {
+            "isbn": "9791030106138",
+            "prix": "13,99",
+            "format": "ePub",
+            "kobo": "https://www.kobo.com/fr/fr/search?query=9791030106138"
+          }
         },
         {
           "titre": "Le sommeil, le rêve et l'enfant",
@@ -89,7 +103,13 @@
           "editionAnnee": "2011",
           "prix": "20,90",
           "isbn": "9782226217820",
-          "disponibilite": "Facile à trouver."
+          "disponibilite": "Facile à trouver.",
+          "numerique": {
+            "isbn": "9782226432544",
+            "prix": "12,99",
+            "format": "ePub",
+            "kobo": "https://www.kobo.com/fr/fr/search?query=9782226432544"
+          }
         },
         {
           "titre": "Bébé, dis-moi pourquoi tu pleures ?",
@@ -107,7 +127,13 @@
           "editionAnnee": "2011",
           "prix": "16,00",
           "isbn": "9782749214979",
-          "disponibilite": "À commander en librairie."
+          "disponibilite": "À commander en librairie.",
+          "numerique": {
+            "isbn": "9782749230399",
+            "prix": "9,99",
+            "format": "ePub",
+            "kobo": "https://www.kobo.com/fr/fr/search?query=9782749230399"
+          }
         },
         {
           "titre": "Apaiser son enfant",
@@ -125,7 +151,8 @@
           "editionAnnee": "2004",
           "prix": "8,10",
           "isbn": "9782213617893",
-          "disponibilite": "À commander en librairie."
+          "disponibilite": "À commander en librairie.",
+          "numerique": null
         }
       ],
       "aSavoir": "« Il pleure, que dit-il ? » de Priscilla Dunstan (JC Lattès, 2016, 18 €) promet de décoder les besoins du bébé dans ses cris. Les études de l'équipe de Nicolas Mathevon (2023) montrent que les pleurs disent le niveau de détresse, pas la cause : la méthode n'a pas de base scientifique."
@@ -151,7 +178,13 @@
           "editionAnnee": "2025",
           "prix": "16,50",
           "isbn": "9782749283081",
-          "disponibilite": "Facile à trouver."
+          "disponibilite": "Facile à trouver.",
+          "numerique": {
+            "isbn": "9782749283111",
+            "prix": "11,99",
+            "format": "ePub",
+            "kobo": "https://www.kobo.com/fr/fr/search?query=9782749283111"
+          }
         },
         {
           "titre": "Les dépressions post-partum",
@@ -169,7 +202,13 @@
           "editionAnnee": "2022",
           "prix": "10,00",
           "isbn": "9782715413290",
-          "disponibilite": "Facile à trouver, ou sur commande."
+          "disponibilite": "Facile à trouver, ou sur commande.",
+          "numerique": {
+            "isbn": "9782715413306",
+            "prix": "7,99",
+            "format": "ePub",
+            "kobo": "https://www.kobo.com/fr/fr/search?query=9782715413306"
+          }
         },
         {
           "titre": "L'effet bébé : métamorphoses conjugales à l'arrivée du premier enfant",
@@ -187,7 +226,13 @@
           "editionAnnee": "2023",
           "prix": "23,00",
           "isbn": "9782749277998",
-          "disponibilite": "À commander en librairie."
+          "disponibilite": "À commander en librairie.",
+          "numerique": {
+            "isbn": "9782749278001",
+            "prix": "15,99",
+            "format": "ePub",
+            "kobo": "https://www.kobo.com/fr/fr/search?query=9782749278001"
+          }
         },
         {
           "titre": "Le burn-out parental : l'éviter et s'en sortir",
@@ -205,7 +250,13 @@
           "editionAnnee": "2024",
           "prix": "9,50",
           "isbn": "9782415010157",
-          "disponibilite": "Facile à trouver."
+          "disponibilite": "Facile à trouver.",
+          "numerique": {
+            "isbn": "9782738154699",
+            "prix": "14,99",
+            "format": "ePub",
+            "kobo": "https://www.kobo.com/fr/fr/search?query=9782738154699"
+          }
         },
         {
           "titre": "Le père et la nouvelle paternité",
@@ -223,7 +274,14 @@
           "editionAnnee": "2022",
           "prix": "20,90",
           "isbn": "9782738155665",
-          "disponibilite": "Stock limité : à commander en librairie."
+          "disponibilite": "Stock limité : à commander en librairie.",
+          "numerique": {
+            "isbn": "9782738155672",
+            "prix": "16,99",
+            "format": "ePub",
+            "remarque": "mais en mise en page fixe : le texte ne s'agrandit pas",
+            "kobo": "https://www.kobo.com/fr/fr/search?query=9782738155672"
+          }
         }
       ],
       "aSavoir": "« Le post-partum dure 3 ans » d'Anna Roy, sage-femme, est très lu et rassurant, mais ces « 3 ans » sont une image et non une définition médicale. « Ceci est notre post-partum » d'Illana Weizman est un essai engagé, utile pour comprendre les tabous, mais ce n'est pas un guide de santé."
@@ -249,7 +307,13 @@
           "editionAnnee": "2024",
           "prix": "24,95",
           "isbn": "9782412089842",
-          "disponibilite": "Facile à trouver."
+          "disponibilite": "Facile à trouver.",
+          "numerique": {
+            "isbn": "9782412098677",
+            "prix": "17,99",
+            "format": "ePub",
+            "kobo": "https://www.kobo.com/fr/fr/search?query=9782412098677"
+          }
         },
         {
           "titre": "L'allaitement : de la naissance au sevrage",
@@ -267,7 +331,13 @@
           "editionAnnee": "2023",
           "prix": "21,90",
           "isbn": "9782226480446",
-          "disponibilite": "Facile à trouver."
+          "disponibilite": "Facile à trouver.",
+          "numerique": {
+            "isbn": "9782226482143",
+            "prix": "15,99",
+            "format": "ePub",
+            "kobo": "https://www.kobo.com/fr/fr/search?query=9782226482143"
+          }
         },
         {
           "titre": "L'allaitement : 100 questions-réponses",
@@ -285,7 +355,13 @@
           "editionAnnee": "2024",
           "prix": "16,50",
           "isbn": "9782340085046",
-          "disponibilite": "À commander en librairie."
+          "disponibilite": "À commander en librairie.",
+          "numerique": {
+            "isbn": "9782340085787",
+            "prix": "13,99",
+            "format": "ePub",
+            "kobo": "https://www.kobo.com/fr/fr/search?query=9782340085787"
+          }
         },
         {
           "titre": "La voie lactée : petit guide de l'allaitement",
@@ -303,7 +379,8 @@
           "editionAnnee": "2025",
           "prix": "11,90",
           "isbn": "9782095039400",
-          "disponibilite": "Facile à trouver."
+          "disponibilite": "Facile à trouver.",
+          "numerique": null
         },
         {
           "titre": "Manuel très illustré d'allaitement",
@@ -321,7 +398,8 @@
           "editionAnnee": "2022",
           "prix": "24,00",
           "isbn": "9782956294757",
-          "disponibilite": "Facile à trouver."
+          "disponibilite": "Facile à trouver.",
+          "numerique": null
         }
       ],
       "aSavoir": "« L'art de l'allaitement maternel » de La Leche League est un classique, écrit par une association très engagée pour l'allaitement. Il n'est pas dans ce top 5 : le poche (Pocket, 9,90 €) reprend une ancienne version, et la nouvelle édition (2022, 28 €) ne se trouve qu'auprès de l'association."
@@ -347,7 +425,8 @@
           "editionAnnee": "2025",
           "prix": "17,95",
           "isbn": "9782317036705",
-          "disponibilite": "Facile à trouver."
+          "disponibilite": "Facile à trouver.",
+          "numerique": null
         },
         {
           "titre": "Points forts, tome 1 : de la naissance à 3 ans",
@@ -365,7 +444,13 @@
           "editionAnnee": "1999",
           "prix": "9,90",
           "isbn": "9782253081982",
-          "disponibilite": "Facile à trouver."
+          "disponibilite": "Facile à trouver.",
+          "numerique": {
+            "isbn": "9782253181101",
+            "prix": "9,49",
+            "format": "ePub",
+            "kobo": "https://www.kobo.com/fr/fr/search?query=9782253181101"
+          }
         },
         {
           "titre": "Les compétences du nouveau-né",
@@ -383,7 +468,13 @@
           "editionAnnee": "2002",
           "prix": "20,90",
           "isbn": "9782226134103",
-          "disponibilite": "Peu en stock : à commander en librairie."
+          "disponibilite": "Peu en stock : à commander en librairie.",
+          "numerique": {
+            "isbn": "9782226237194",
+            "prix": "13,99",
+            "format": "ePub",
+            "kobo": "https://www.kobo.com/fr/fr/search?query=9782226237194"
+          }
         },
         {
           "titre": "L'éveil de votre enfant : le tout-petit au quotidien",
@@ -401,7 +492,13 @@
           "editionAnnee": "2020",
           "prix": "19,00",
           "isbn": "9782226451484",
-          "disponibilite": "À commander en librairie."
+          "disponibilite": "À commander en librairie.",
+          "numerique": {
+            "isbn": "9782226452498",
+            "prix": "12,99",
+            "format": "ePub",
+            "kobo": "https://www.kobo.com/fr/fr/search?query=9782226452498"
+          }
         },
         {
           "titre": "Je porte mon bébé",
@@ -419,7 +516,14 @@
           "editionAnnee": "2024",
           "prix": "14,99",
           "isbn": "9782401103481",
-          "disponibilite": "Facile à trouver."
+          "disponibilite": "Facile à trouver.",
+          "numerique": {
+            "isbn": "9782401106710",
+            "prix": "10,99",
+            "format": "ePub",
+            "remarque": "mais en mise en page fixe (photos) : plus confortable sur papier",
+            "kobo": "https://www.kobo.com/fr/fr/search?query=9782401106710"
+          }
         }
       ],
       "aSavoir": "« Le grand livre du développement de bébé » de Hetty van de Rijt et Frans Plooij (méthode des « sauts » ou « pics de croissance ») est très vendu, mais il repose sur des observations anciennes d'un petit nombre de familles : à lire avec recul, sans y voir un calendrier fiable."
@@ -445,7 +549,13 @@
           "editionAnnee": "2018",
           "prix": "24,90",
           "isbn": "9782738145420",
-          "disponibilite": "Pas de poche. Facile à trouver."
+          "disponibilite": "Pas de poche. Facile à trouver.",
+          "numerique": {
+            "isbn": "9782738145437",
+            "prix": "16,99",
+            "format": "ePub",
+            "kobo": "https://www.kobo.com/fr/fr/search?query=9782738145437"
+          }
         },
         {
           "titre": "Comment pensent les bébés ?",
@@ -463,7 +573,8 @@
           "editionAnnee": "2005",
           "prix": "23,90",
           "isbn": "9782746502123",
-          "disponibilite": "Le poche (9,90 €) est épuisé : à chercher d'occasion ou en médiathèque."
+          "disponibilite": "Le poche (9,90 €) est épuisé : à chercher d'occasion ou en médiathèque.",
+          "numerique": null
         },
         {
           "titre": "Journal d'un bébé",
@@ -481,7 +592,13 @@
           "editionAnnee": "2012",
           "prix": "8,50",
           "isbn": "9782738122674",
-          "disponibilite": "Facile à trouver."
+          "disponibilite": "Facile à trouver.",
+          "numerique": {
+            "isbn": "9782738182128",
+            "prix": "9,99",
+            "format": "ePub",
+            "kobo": "https://www.kobo.com/fr/fr/search?query=9782738182128"
+          }
         },
         {
           "titre": "Grandir autonome",
@@ -499,7 +616,13 @@
           "editionAnnee": "2017",
           "prix": "23,00",
           "isbn": "9782749256658",
-          "disponibilite": "Plutôt lu par les professionnels : à commander en librairie."
+          "disponibilite": "Plutôt lu par les professionnels : à commander en librairie.",
+          "numerique": {
+            "isbn": "9782749256665",
+            "prix": "15,99",
+            "format": "ePub",
+            "kobo": "https://www.kobo.com/fr/fr/search?query=9782749256665"
+          }
         },
         {
           "titre": "Le cerveau de votre enfant",
@@ -517,7 +640,13 @@
           "editionAnnee": "2015",
           "prix": "19,90",
           "isbn": "9782352044116",
-          "disponibilite": "Le poche (6,90 €) est épuisé : à chercher d'occasion ou en médiathèque."
+          "disponibilite": "Le poche (6,90 €) est épuisé : à chercher d'occasion ou en médiathèque.",
+          "numerique": {
+            "isbn": "9782352044284",
+            "prix": "13,99",
+            "format": "ePub",
+            "kobo": "https://www.kobo.com/fr/fr/search?query=9782352044284"
+          }
         }
       ]
     },
@@ -542,7 +671,13 @@
           "editionAnnee": "2011",
           "prix": "8,00",
           "isbn": "9782818501962",
-          "disponibilite": "Facile à trouver."
+          "disponibilite": "Facile à trouver.",
+          "numerique": {
+            "isbn": "9782702147672",
+            "prix": "6,99",
+            "format": "ePub",
+            "kobo": "https://www.kobo.com/fr/fr/search?query=9782702147672"
+          }
         },
         {
           "titre": "Lire des livres à des bébés",
@@ -560,7 +695,8 @@
           "editionAnnee": "1998",
           "prix": "9,50",
           "isbn": "9782865866441",
-          "disponibilite": "Rarement en rayon : à commander en librairie."
+          "disponibilite": "Rarement en rayon : à commander en librairie.",
+          "numerique": null
         },
         {
           "titre": "Faites-les lire !",
@@ -578,7 +714,13 @@
           "editionAnnee": "2024",
           "prix": "10,80",
           "isbn": "9791041414970",
-          "disponibilite": "Très facile à trouver."
+          "disponibilite": "Très facile à trouver.",
+          "numerique": {
+            "isbn": "9782021492941",
+            "prix": "9,99",
+            "format": "ePub",
+            "kobo": "https://www.kobo.com/fr/fr/search?query=9782021492941"
+          }
         },
         {
           "titre": "Lecteur, reste avec nous !",
@@ -596,7 +738,13 @@
           "editionAnnee": "2023",
           "prix": "23,00",
           "isbn": "9782889730414",
-          "disponibilite": "À commander en librairie."
+          "disponibilite": "À commander en librairie.",
+          "numerique": {
+            "isbn": "9782889730421",
+            "prix": "16,99",
+            "format": "ePub",
+            "kobo": "https://www.kobo.com/fr/fr/search?query=9782889730421"
+          }
         },
         {
           "titre": "Les neurones de la lecture",
@@ -614,7 +762,13 @@
           "editionAnnee": "2007",
           "prix": "29,90",
           "isbn": "9782738119742",
-          "disponibilite": "Plus court et moins cher, du même auteur : « Apprendre à lire » (Odile Jacob, 2011, 14,90 €)."
+          "disponibilite": "Plus court et moins cher, du même auteur : « Apprendre à lire » (Odile Jacob, 2011, 14,90 €).",
+          "numerique": {
+            "isbn": "9782738186690",
+            "prix": "23,99",
+            "format": "ePub",
+            "kobo": "https://www.kobo.com/fr/fr/search?query=9782738186690"
+          }
         }
       ],
       "aSavoir": "Et Céline Alvarez ? Son livre « Pourquoi il faut apprendre à lire en maternelle » (Les Arènes, 2026, 20 €) n'est pas dans ce top 5 : sa méthode n'a jamais été évaluée de façon indépendante. Préparer la lecture en maternelle (sons et lettres) est validé par la recherche ; faire lire couramment tous les enfants si tôt ne l'est pas."
@@ -798,6 +952,10 @@
     var q = encodeURIComponent(l.isbn || (l.titre + ' ' + l.auteurs));
     var ref = [l.format, l.editeur, l.editionAnnee, l.isbn ? 'ISBN ' + l.isbn : ''].filter(Boolean).map(esc).join(' · ');
     var statut = l.statut && l.statut !== 'à découvrir' ? '<span class="statut">' + esc(l.statut) + '</span>' : '';
+    var num = l.numerique;
+    var refNum = num
+      ? 'Livre numérique (' + esc(num.format || 'ePub') + (num.prix ? ', ' + esc(num.prix) + ' €' : '') + ') : se lit sur Kobo' + (num.remarque ? ', ' + esc(num.remarque) : '') + '.'
+      : (l.numerique === null ? 'Pas de version numérique.' : '');
     return '<li>' +
       '<div class="rang">' + (i + 1) + '</div>' +
       '<div>' +
@@ -810,13 +968,14 @@
           lien('Fnac', 'https://www.fnac.com/SearchResult/ResultList.aspx?Search=' + q) +
           lien('Cultura', 'https://www.cultura.com/search/results?search_query=' + q) +
           lien('Librairie', 'https://www.placedeslibraires.fr/listeliv.php?base=allbooks&mots_recherche=' + q) +
+          (num ? lien('Kobo', num.kobo || 'https://www.kobo.com/fr/fr/search?query=' + encodeURIComponent(num.isbn || (l.titre + ' ' + l.auteurs))) : '') +
         '</div>' +
         '<details class="plus"><summary>En savoir plus</summary><div class="fiche">' +
           (l.pourQui ? '<p><b>Pour qui :</b> ' + esc(l.pourQui) + (l.niveau ? ' Livre ' + esc(NIV[l.niveau] || l.niveau) + '.' : '') + '</p>' : '') +
           (l.pourquoi ? '<p><b>Ce qu\'il apporte :</b> ' + esc(l.pourquoi) + '</p>' : '') +
           (l.fiabiliteNote ? '<p><b>Fiabilité :</b> ' + esc(l.fiabiliteNote) + '</p>' : '') +
           (l.avis ? '<p><b>Notre avis :</b> ' + esc(l.avis) + '</p>' : '') +
-          '<p class="ref">' + ref + (l.disponibilite ? '. ' + esc(l.disponibilite) : '') + '</p>' +
+          '<p class="ref">' + ref + (l.disponibilite ? '. ' + esc(l.disponibilite) : '') + (refNum ? ' ' + refNum : '') + '</p>' +
         '</div></details>' +
       '</div></li>';
   }
