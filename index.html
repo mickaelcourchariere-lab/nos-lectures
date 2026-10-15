@@ -465,7 +465,12 @@
 
 // Appli installable : garde la page en mémoire pour l'ouvrir même sans internet.
 if ('serviceWorker' in navigator && location.protocol === 'https:') {
-  navigator.serviceWorker.register('sw.js').catch(function () {});
+  var avaitDeja = !!navigator.serviceWorker.controller, recharge = false;
+  // Quand une nouvelle version de l'appli s'installe, la page se recharge une fois pour l'afficher.
+  navigator.serviceWorker.addEventListener('controllerchange', function () {
+    if (avaitDeja && !recharge) { recharge = true; location.reload(); }
+  });
+  navigator.serviceWorker.register('sw.js', { updateViaCache: 'none' }).then(function (r) { r.update(); }).catch(function () {});
 }
 </script>
 </body>
