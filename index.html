@@ -288,7 +288,6 @@
   /* En-tête */
   .surtitre { text-transform: uppercase; letter-spacing: .14em; font-size: 12.5px; font-weight: 600; color: var(--accent); margin: 0 0 10px; }
   h1 { font-size: clamp(36px, 8vw, 54px); line-height: 1.05; font-weight: 600; margin: 0 0 14px; }
-  .chapeau { color: var(--doux); margin: 0 0 28px; max-width: 52ch; }
   .legende { font-size: 14px; color: var(--doux); margin: 0 0 40px; }
   .legende b { font-weight: 600; }
 
@@ -353,7 +352,6 @@
   .a-savoir { margin: 4px 20px 18px; padding: 14px 16px; border-left: 3px solid var(--accent); background: var(--encadre); border-radius: 0 12px 12px 0; font-size: 15px; }
   .a-savoir b { font-weight: 600; }
 
-  footer { color: var(--doux); font-size: 14px; border-top: 1px solid var(--trait); padding-top: 16px; margin-top: 48px; }
 
   @media (max-width: 560px) {
     body { font-size: 16px; }
@@ -379,19 +377,13 @@
   <header>
     <p class="surtitre">Pour bien accueillir bébé</p>
     <h1>Nos lectures</h1>
-    <p class="chapeau">Choisissez un thème pour voir ses cinq meilleurs livres : ce que chacun apporte, s'il est fiable et où l'acheter.</p>
     <p class="legende">
       <span class="fiab solide">Solide</span> fondé sur la recherche ·
       <span class="fiab nuancer">À nuancer</span> utile, mais simplifié ou fondé sur l'expérience.
-      Le prix d'un livre neuf est le même partout en France.
     </p>
   </header>
 
   <div class="themes" id="themes"></div>
-
-  <footer>
-    <p>Mis à jour le <span id="maj"></span>. Prix et disponibilités relevés à cette date. En magasin : sur Fnac ou Cultura, choisissez votre magasin pour voir si le livre est en rayon ; « Librairie » montre les librairies indépendantes proches qui l'ont en stock.</p>
-  </footer>
 </main>
 
 <script>
@@ -469,8 +461,6 @@
   // Un lien vers « …html#lecture » ouvre directement ce thème.
   var cible = location.hash && document.getElementById(decodeURIComponent(location.hash.slice(1)));
   if (cible && cible.matches('details.theme')) cible.open = true;
-  var m = d.miseAJour.split('-');
-  document.getElementById('maj').textContent = m[2] + '/' + m[1] + '/' + m[0];
 })();
 
 // Appli installable : garde la page en mémoire pour l'ouvrir même sans internet.
