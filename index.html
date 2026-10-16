@@ -771,7 +771,80 @@
           }
         }
       ],
-      "aSavoir": "Et Céline Alvarez ? Son livre « Pourquoi il faut apprendre à lire en maternelle » (Les Arènes, 2026, 20 €) n'est pas dans ce top 5 : sa méthode n'a jamais été évaluée de façon indépendante. Préparer la lecture en maternelle (sons et lettres) est validé par la recherche ; faire lire couramment tous les enfants si tôt ne l'est pas."
+      "horsClassement": [
+        {
+          "titre": "Les lois naturelles de l'enfant",
+          "auteurs": "Céline Alvarez",
+          "annee": "2016",
+          "enBref": "Sa classe de maternelle à Gennevilliers et sa vision de l'enfant qui apprend.",
+          "pourQui": "Les parents, pour les 0 à 6 ans.",
+          "pourquoi": "Elle raconte sa classe de Gennevilliers (2011 à 2014) et en tire des principes : laisser l'enfant agir, l'entraide entre âges, du matériel inspiré de Montessori. Très lu et inspirant.",
+          "niveau": "accessible",
+          "fiabilite": "discute",
+          "fiabiliteNote": "Ses résultats n'ont jamais été évalués de façon indépendante : pour le chercheur Édouard Gentaz, c'est une observation de classe, pas une recherche. Ses références aux neurosciences sont souvent simplifiées.",
+          "statut": "à découvrir",
+          "format": "Poche",
+          "editeur": "Proche",
+          "editionAnnee": "2022",
+          "prix": "8,90",
+          "isbn": "9782493909046",
+          "disponibilite": "Facile à trouver.",
+          "numerique": {
+            "isbn": "9782352045823",
+            "prix": "7,99",
+            "format": "ePub",
+            "kobo": "https://www.kobo.com/fr/fr/search?query=9782352045823"
+          }
+        },
+        {
+          "titre": "Une année pour tout changer",
+          "auteurs": "Céline Alvarez",
+          "annee": "2019",
+          "enBref": "Comment 750 enseignants belges ont changé leur classe en une année.",
+          "pourQui": "Surtout les enseignants de maternelle ; les parents curieux de pédagogie.",
+          "pourquoi": "Elle raconte l'accompagnement d'enseignants qui ont réaménagé leur classe et individualisé l'apprentissage, sans moyens en plus. Pour elle, c'est aux adultes de changer, pas à l'enfant.",
+          "niveau": "accessible",
+          "fiabilite": "discute",
+          "fiabiliteNote": "Les progrès décrits viennent du récit de l'autrice et des enseignants, sans évaluation indépendante publiée.",
+          "statut": "à découvrir",
+          "format": "Poche",
+          "editeur": "Proche",
+          "editionAnnee": "2026",
+          "prix": "8,90",
+          "isbn": "9782487891555",
+          "disponibilite": "Facile à trouver.",
+          "numerique": {
+            "isbn": "9791037500458",
+            "prix": "13,99",
+            "format": "ePub",
+            "kobo": "https://www.kobo.com/fr/fr/search?query=9791037500458"
+          }
+        },
+        {
+          "titre": "Pourquoi il faut apprendre à lire en maternelle",
+          "auteurs": "Céline Alvarez",
+          "annee": "2026",
+          "enBref": "Sa méthode pour apprendre le code de la lecture dès 3 ans.",
+          "pourQui": "Les parents d'enfants de 3 à 6 ans.",
+          "pourquoi": "Elle défend un apprentissage du lien entre lettres et sons dès la maternelle, avec des lettres mobiles, pour réduire les inégalités devant la lecture.",
+          "niveau": "accessible",
+          "fiabilite": "discute",
+          "fiabiliteNote": "Préparer la lecture en maternelle (sons et lettres) est validé par la recherche ; faire lire couramment tous les enfants si tôt ne l'est pas, et sa méthode n'a jamais été évaluée de façon indépendante.",
+          "statut": "à découvrir",
+          "format": "Grand format",
+          "editeur": "Les Arènes",
+          "editionAnnee": "2026",
+          "prix": "20,00",
+          "isbn": "9791037516183",
+          "disponibilite": "Facile à trouver.",
+          "numerique": {
+            "isbn": "9791037516190",
+            "prix": "13,99",
+            "format": "ePub",
+            "kobo": "https://www.kobo.com/fr/fr/search?query=9791037516190"
+          }
+        }
+      ]
     }
   ]
 }
@@ -897,6 +970,16 @@
 
   .a-savoir { margin: 4px 20px 18px; padding: 14px 16px; border-left: 3px solid var(--accent); background: var(--encadre); border-radius: 0 12px 12px 0; font-size: 15px; }
   .a-savoir b { font-weight: 600; }
+  .hors { border-top: 1px solid var(--trait); }
+  .hors-titre { margin: 0; padding: 16px 20px 0; font-size: 13px; text-transform: uppercase; letter-spacing: .12em; font-weight: 600; color: var(--doux); }
+  ul.top { list-style: none; margin: 0; padding: 0; }
+  ul.top > li { display: grid; grid-template-columns: 52px 1fr; gap: 0 14px; padding: 16px 22px 20px 14px; }
+  ul.top > li + li { border-top: 1px solid var(--trait); }
+  ul.top .rang { color: var(--doux); }
+  @media (max-width: 560px) {
+    ul.top > li { grid-template-columns: 34px 1fr; gap: 0 10px; padding: 14px 16px 16px 10px; }
+    .hors-titre { padding: 14px 14px 0; }
+  }
 
 
   @media (max-width: 560px) {
@@ -925,7 +1008,8 @@
     <h1>Nos lectures</h1>
     <p class="legende">
       <span class="fiab solide">Solide</span> fondé sur la recherche ·
-      <span class="fiab nuancer">À nuancer</span> utile, mais simplifié ou fondé sur l'expérience.
+      <span class="fiab nuancer">À nuancer</span> utile, mais simplifié ou fondé sur l'expérience ·
+      <span class="fiab discute">Discuté</span> non validé par la recherche, hors classement.
     </p>
   </header>
 
@@ -957,7 +1041,7 @@
       ? 'Livre numérique (' + esc(num.format || 'ePub') + (num.prix ? ', ' + esc(num.prix) + ' €' : '') + ') : se lit sur Kobo' + (num.remarque ? ', ' + esc(num.remarque) : '') + '.'
       : (l.numerique === null ? 'Pas de version numérique.' : '');
     return '<li>' +
-      '<div class="rang">' + (i + 1) + '</div>' +
+      '<div class="rang">' + (i >= 0 ? i + 1 : '·') + '</div>' +
       '<div>' +
         '<div class="ligne1"><h3>' + esc(l.titre) + '</h3>' + (l.prix ? '<span class="prix">' + esc(l.prix) + ' €</span>' : '') + '</div>' +
         '<p class="auteur">' + esc(l.auteurs) + ', ' + esc(l.annee) + '</p>' +
@@ -992,6 +1076,10 @@
       '</summary>' +
       '<div class="contenu">' +
         '<ol class="top">' + t.livres.map(ligne).join('') + '</ol>' +
+        (t.horsClassement && t.horsClassement.length
+          ? '<div class="hors"><p class="hors-titre">Hors classement</p><ul class="top">' +
+            t.horsClassement.map(function (l) { return ligne(l, -1); }).join('') + '</ul></div>'
+          : '') +
         (t.aSavoir ? '<p class="a-savoir"><b>À savoir.</b> ' + esc(t.aSavoir) + '</p>' : '') +
       '</div></details>';
   });
